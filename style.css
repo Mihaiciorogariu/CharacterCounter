@@ -1,0 +1,104 @@
+body
+{
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #e944ff, #6e01c7);
+}
+
+.container
+{
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: neonGlow 2s infinite alternate;
+}
+
+@keyframes neonGlow 
+{
+    from{
+        box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    }
+    
+    to{
+        /*box-shadow: 0px 0px 15px rgb(253, 255, 161),
+        0px 0px 20px rgb(248, 252, 56),
+        0px 0px 25px #f8e802;*/
+        
+        box-shadow: 0px 0px 15px rgb(255, 122, 255),
+        0px 0px 20px rgb(255, 0, 221),
+        0px 0px 25px #8400ff;
+    }
+}
+
+h1
+{
+    color: #000000;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+textarea
+{
+    width: 500px;
+    height: 350px;
+    margin: 10px auto;
+    display: block;
+    font-size: 24px;
+    padding: 20px;
+    color: rgb(3, 0, 0);
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    resize: none;
+    animation: slideIn 1s ease;
+}
+
+@keyframes slideIn 
+{
+    from{
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+button 
+{
+    padding: 15px 30px;
+    background-color: #b551ee;
+    width: 500px;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor:pointer;
+    transition: background-color 0.5s ease;
+
+}
+
+button:hover
+{
+    background-color: #991efd;
+}
+
+#result
+{
+    font-size: 20px;
+    margin-top: 20px;
+    color: #000000;
+    font-weight: bold;
+    
+}
