@@ -1,4 +1,5 @@
 # CharacterCounter
+https://mihaiciorogariu.github.io/CharacterCounter/
 
 JavaScript web application that requires an input text and based on it it counts:
   The total number of vowels,
